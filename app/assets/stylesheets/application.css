@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require base
+ *= require fluid_grid
+ 
+ *= require_self
+ *= require_tree .
+*/
+body{
+background-color:#EFF3FD;
+}
+
+.header{
+height:50px;
+background-color:#000;
+
+-moz-border-radius: 15px;
+border-radius:15px
+}
+.header ul,.header ul li{
+display:inline;
+}
+.header li{
+margin:10px;
+padding:10px;
+}
+.header li a{
+ margin-top:15px;
+ display:inline-block;
+ color:#fff;
+ font-size:15px;
+}
+.main-content{
+
+}
+#content {
+margin:10px;
+}
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+		
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+
+}
+.footer{
+background-color:#000;
+color:#cfcfcf;
+}
+.footer p{
+padding:10px;
+}
+.footer, .push {
+	height: 40px; /* .push must be the same height as .footer */
+}
+
