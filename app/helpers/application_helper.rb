@@ -17,7 +17,7 @@ def flash_messages
 	def sidebar_enabled?
 		current_page = "#{controller.controller_name}.#{controller.action_name}"
 		current_controller = controller.controller_name
-		pages = %w()
+		pages = %w(users.profile)
 
 		return pages.include?(current_page) || pages.include?(current_controller)
 	end
@@ -33,7 +33,8 @@ def flash_messages
 
 	def active_class
 		classes = {
-						'home' => 'home'
+						'home' => 'home',
+						'users.profile'=> 'profile'
 		}
 		classes[controller.controller_name + '.' + controller.action_name] || classes[controller.controller_name] || ''
 

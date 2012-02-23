@@ -37,7 +37,7 @@ html, body {
 #footer, .push {
 	height: 100px; /* .push must be the same height as .footer */
 }
-@font-face { font-family: Delicious; src: url('/assets/fonts/Delicious-Roman.otf'); } 
+@font-face { font-family: Delicious; src: url('/assets/Delicious-Roman.otf'); } 
 
 @font-face { font-family: Delicious1; font-weight: bold; src: url('/assets/Delicious-Bold.otf'); }
 @font-face { font-family: "CaviarDreams"; src: url('/assets/CaviarDreams.ttf'); } 

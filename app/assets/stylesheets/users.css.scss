@@ -1,0 +1,19 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#sidebar{
+height:60%;
+z-index:1000;
+background-color:red;
+}
+#content{
+border-left:solid #ccc 2px;
+height:60%;
+
+}
+#content div,#content p,#content h1{
+padding-left:20px;
+}
+.profile-links{
+padding:10px 20px;
+}
