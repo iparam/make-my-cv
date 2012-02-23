@@ -1,0 +1,26 @@
+%html
+  %head
+    %title Online Resume Builder | Make My CV
+    = stylesheet_link_tag    "application" 
+    = javascript_include_tag "application" 
+    = csrf_meta_tags
+  %body
+    .container_16
+      .topnav Make My Profile
+      .wrapper
+        %header
+          %nav#navbar
+            %ul#nav
+              %li{:class=>"#{current_class('home')}"}
+                %a{:href => "#"} Home
+              %li
+                %a{:href => "#"} About Us
+        %section#mainContent.grid_16
+          #content{:class=>"#{main_content_css_class}"}
+            = yield
+          #sidebar{:class=>"#{sidebar_css_class}"}
+            = yield :sidebar
+          .clear
+        .push
+      %footer.footer
+        %p Copyright (c) 2008
