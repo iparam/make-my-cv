@@ -40,8 +40,8 @@ html, body {
 @font-face { font-family: Delicious; src: url('/assets/fonts/Delicious-Roman.otf'); } 
 
 @font-face { font-family: Delicious1; font-weight: bold; src: url('/assets/Delicious-Bold.otf'); }
-@font-face { font-family: "CaviarDreams"; src: url('/assets/CaviarDreams.ttf');format("truetype"); } 
-@font-face { font-family: "CaviarDreamsI"; src: url('/assets/CaviarDreamsItalic.ttf');format("truetype"); } 
+@font-face { font-family: "CaviarDreams"; src: url('/assets/CaviarDreams.ttf'); } 
+@font-face { font-family: "CaviarDreamsI"; src: url('/assets/CaviarDreamsItalic.ttf'); } 
 @font-face { font-family: "Angelina"; src: url('/assets/angelina.ttf'); } 
 @font-face { font-family: "notethis"; src: url('/assets/Note_this.ttf'); } 
 .topnav{
