@@ -7,8 +7,8 @@
         =link_to "Sign Up","#",:id=>"signup-link"
         | 
         =link_to "Login","#",:id=>"login-link"   
-      %div.signup-form-div
+      %div.signup-form-div{:style=>"display:none"}
         = render :partial=>"home/sign_up_form"
-      %div.login-form-div{:style=>"display:none"}
+      %div.login-form-div
         = render :partial=>"home/login_form"  
   =clearing_span

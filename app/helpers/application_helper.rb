@@ -34,6 +34,10 @@ def flash_messages
 	def active_class
 		classes = {
 						'home' => 'home',
+						"registrations.edit" =>'home',
+						"registrations.new" =>'home',
+						"registrations.create" =>'home',
+  					"sessions.new" =>'home',
 						'users.profile'=> 'profile'
 		}
 		classes[controller.controller_name + '.' + controller.action_name] || classes[controller.controller_name] || ''
