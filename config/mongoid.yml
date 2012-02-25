@@ -10,7 +10,7 @@ test:
 production:
   host: staff.mongohq.com
   port: 10022
-  username: amardaxini@gmail.com
+  username: amardaxini
   password: thakkar!
   database: makemycv
   # slaves:
