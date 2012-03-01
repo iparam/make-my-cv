@@ -1,3 +1,18 @@
+GIT
+  remote: https://github.com/mongoid/mongoid.git
+  revision: 279c4c385791ad2ad33a38eb19689f7894b3be62
+  specs:
+    mongoid (3.0.0)
+      activemodel (~> 3.1)
+      mongo (~> 1.3)
+      tzinfo (~> 0.3.22)
+
+GIT
+  remote: https://github.com/ryanb/nested_form.git
+  revision: 486e0f0e93f3ca455d5d0fc7869053257b6afce2
+  specs:
+    nested_form (0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,11 +43,11 @@ GEM
     activesupport (3.2.1)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    arel (3.0.0)
+    arel (3.0.2)
     bcrypt-ruby (3.0.1)
-    bson (1.5.2)
-    bson_ext (1.5.2)
-      bson (= 1.5.2)
+    bson (1.6.0)
+    bson_ext (1.6.0)
+      bson (= 1.6.0)
     builder (3.0.0)
     coderay (1.0.5)
     coffee-rails (3.2.2)
@@ -42,14 +57,16 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
-    devise (2.0.1)
+    devise (2.0.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
       railties (~> 3.1)
-      warden (~> 1.1)
+      warden (~> 1.1.1)
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
+    formtastic (2.1.0)
+      actionpack (~> 3.0)
     haml (3.1.4)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -58,30 +75,26 @@ GEM
       railties (~> 3.0)
     hike (1.2.1)
     i18n (0.6.0)
-    journey (1.0.1)
-    jquery-rails (2.0.0)
-      railties (>= 3.2.0.beta, < 5.0)
+    journey (1.0.3)
+    jquery-rails (2.0.1)
+      railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
     json (1.6.5)
     mail (2.4.1)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    method_source (0.7.0)
+    method_source (0.7.1)
     mime-types (1.17.2)
-    mongo (1.5.2)
-      bson (= 1.5.2)
-    mongoid (2.4.4)
-      activemodel (~> 3.1)
-      mongo (~> 1.3)
-      tzinfo (~> 0.3.22)
-    multi_json (1.0.4)
+    mongo (1.6.0)
+      bson (= 1.6.0)
+    multi_json (1.1.0)
     orm_adapter (0.0.6)
     polyglot (0.3.3)
-    pry (0.9.8)
+    pry (0.9.8.2)
       coderay (~> 1.0.5)
       method_source (~> 0.7)
-      slop (>= 2.4.3, < 3)
+      slop (>= 2.4.4, < 3)
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
@@ -112,7 +125,7 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    slop (2.4.3)
+    slop (2.4.4)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -126,7 +139,7 @@ GEM
     uglifier (1.2.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
-    warden (1.1.0)
+    warden (1.1.1)
       rack (>= 1.0)
 
 PLATFORMS
@@ -136,10 +149,12 @@ DEPENDENCIES
   bson_ext
   coffee-rails (~> 3.2.1)
   devise
+  formtastic
   haml
   haml-rails
   jquery-rails
-  mongoid
+  mongoid!
+  nested_form!
   pry
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)

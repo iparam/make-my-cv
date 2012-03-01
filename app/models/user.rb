@@ -41,4 +41,9 @@ class User
   # field :authentication_token, :type => String
   field :summary
   field :name
+
+  embeds_many :educations
+#references_many :educations
+#    has_many :educations
+ # accepts_nested_attributes_for :educations
 end

@@ -10,7 +10,14 @@
  *
  *= require base
  *= require fluid_grid
- 
+ *= require formtastic
+
+  
+  # app/assets/stylesheets/ie6.css
+  *= require formtastic_ie6
+  
+  # app/assets/stylesheets/ie7.css
+  *= require formtastic_ie7
  *= require_self
  *= require_tree .
 */

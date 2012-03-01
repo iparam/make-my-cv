@@ -18,13 +18,17 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-gem "mongoid" 
+gem "mongoid" ,:git=>'https://github.com/mongoid/mongoid.git'
 gem "bson_ext"
 gem 'jquery-rails'
 gem "devise"
 gem "haml-rails"
 gem "haml"
 gem "pry"
+
+gem 'formtastic'
+gem "nested_form", :git => 'https://github.com/ryanb/nested_form.git'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

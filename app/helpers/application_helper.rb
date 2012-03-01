@@ -17,7 +17,7 @@ def flash_messages
 	def sidebar_enabled?
 		current_page = "#{controller.controller_name}.#{controller.action_name}"
 		current_controller = controller.controller_name
-		pages = %w(users.profile)
+		pages = %w()
 
 		return pages.include?(current_page) || pages.include?(current_controller)
 	end

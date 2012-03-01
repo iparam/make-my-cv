@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  degree: MyString
+  field: MyString
+  start_date: 2012-02-28
+  end_date: 2012-02-28
+  grade: MyString
+
+two:
+  name: MyString
+  degree: MyString
+  field: MyString
+  start_date: 2012-02-28
+  end_date: 2012-02-28
+  grade: MyString
