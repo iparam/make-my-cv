@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/mongoid/mongoid.git
-  revision: 279c4c385791ad2ad33a38eb19689f7894b3be62
-  specs:
-    mongoid (3.0.0)
-      activemodel (~> 3.1)
-      mongo (~> 1.3)
-      tzinfo (~> 0.3.22)
-
-GIT
   remote: https://github.com/ryanb/nested_form.git
   revision: 486e0f0e93f3ca455d5d0fc7869053257b6afce2
   specs:
@@ -88,6 +79,10 @@ GEM
     mime-types (1.17.2)
     mongo (1.6.0)
       bson (= 1.6.0)
+    mongoid (2.4.5)
+      activemodel (~> 3.1)
+      mongo (~> 1.3)
+      tzinfo (~> 0.3.22)
     multi_json (1.1.0)
     orm_adapter (0.0.6)
     polyglot (0.3.3)
@@ -153,7 +148,7 @@ DEPENDENCIES
   haml
   haml-rails
   jquery-rails
-  mongoid!
+  mongoid
   nested_form!
   pry
   rails (= 3.2.1)

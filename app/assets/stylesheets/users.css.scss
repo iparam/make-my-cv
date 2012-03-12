@@ -2,3 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+table.sidebar_listing {
+  padding: 5px;
+th {
+  padding-top: 10px;
+}
+td {
+  border-top: solid 1px #eee;
+  padding: 6px;
+}
+td.example1{
+  background-color: #FFE;
+  font-size: 8pt;
+  padding: 5px;
+  padding: 5px;
+}
+td.example3 {
+  border: solid 1px #DDD;
+  background-color: #EEE;
+  font-size: 14px;
+  padding: 5px;
+}
+}
+/*H4 {*/
+/*  color: #999;*/
+/*  background-color: #fee;*/
+/*  border: solid 1px #caa;*/
+/*  margin: 10px 15px 5px 10px;*/
+/*  padding: 5px;*/
+/*}*/
+/*P {*/
+/*  margin: 2px 5px 2px 5px;*/
+/*}*/
+
+.big {
+  font-size: 12pt;
+}
+#big-red {
+  font-size: 12pt;
+  color: red;
+}
+#big-red2 {
+  font-size: 15pt;
+  color: red;
+}
+

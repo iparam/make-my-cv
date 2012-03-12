@@ -18,7 +18,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-gem "mongoid" ,:git=>'https://github.com/mongoid/mongoid.git'
+gem "mongoid" #,:git=>'https://github.com/mongoid/mongoid.git'
 gem "bson_ext"
 gem 'jquery-rails'
 gem "devise"

@@ -192,8 +192,14 @@ form.data-form input[type=submit]:hover{
     /*background-color: #0c7088;*/
      /*background-color: #111; color: #fff; */
 }
-.fields{
-    margin: 0;
-    
-}
+/*.fields{*/
+/*    margin: 0;*/
+/*    */
+/*}*/
+.fields {
+  margin:10px;
+  label{
+    float:right;
+  }
 
+}

@@ -1,5 +1,14 @@
-= content_for :sidebar do
-  .profile-links 
-    Sidebar
-%h1 Users#profile
-%p Find me in app/views/users/profile.html.haml
+ 
+= nested_form_for(@user,:url=>update_profile_path) do |f| 
+  %div.title.grid_16 
+    %h1.grid_13 Education
+    %span.grid_3#add_title_link
+    
+    =clearing_span
+  = f.fields_for :educations do |u|
+    = render :partial => "educations_fields", :locals => {:builder => u }
+  = f.link_to_add "Add Education", :educations  
+  .fields
+    = f.submit
+  
+  
