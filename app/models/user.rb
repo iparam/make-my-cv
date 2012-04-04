@@ -43,6 +43,8 @@ class User
   field :name
 
   embeds_many :educations
+  embeds_many :experiences
 
-  accepts_nested_attributes_for :educations,:allow_destroy=>true
+   accepts_nested_attributes_for :educations,:allow_destroy=>true
+   accepts_nested_attributes_for :experiences,:allow_destroy=>true
 end

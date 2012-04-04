@@ -1,17 +1,26 @@
-%div.fields
-  %label School Name
-  = builder.text_field :name
-%div.fields
-  %label Field Of Study
-  = builder.text_field :field_of_study
+%hr
+%div.control-group
+  %label.control-label School Name
+  %div.controls
+    = builder.text_field :name
+   
+%div.control-group
+  %label.control-label Field Of Study
+  %div.controls
+    = builder.text_field :field_of_study
 
-%div.fields
-  %label Date Attended
-  = builder.select :start_date,options_for_select(options_for_education_year,builder.object.start_date.try(:to_i)),{:prompt=>"-YY-"}
-  To
-  = builder.select :end_date,options_for_select(options_for_education_year,builder.object.end_date.try(:to_i)),{:prompt=>"-YY-"}
+%div.control-group
+  %label.control-label Date Attended
+  %div.controls  
+    = builder.select :start_date,options_for_select(options_for_education_year,builder.object.start_date.try(:to_i)),{:prompt=>"-YY-"}
+    To
+    = builder.select :end_date,options_for_select(options_for_education_year,builder.object.end_date.try(:to_i)),{:prompt=>"-YY-"}
 
-%div.fields
-  %label Grade
-  = builder.text_field :grade  
-= builder.link_to_remove "Remove this Education"  
+%div.control-group
+  %label.control-label Grade
+  %div.controls  
+    = builder.text_field :grade  
+
+%div.control-group
+  %div.controls    
+    = builder.link_to_remove "Remove this Education" ,:class=>'btn' 

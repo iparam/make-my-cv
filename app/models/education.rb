@@ -8,4 +8,5 @@ class Education
   field :grade, :type => String
   field :user_id
   embedded_in :user
+  
 end

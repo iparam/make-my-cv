@@ -1,14 +1,19 @@
  
-= nested_form_for(@user,:url=>update_profile_path) do |f| 
-  %div.title.grid_16 
-    %h1.grid_13 Education
-    %span.grid_3#add_title_link
-    
-    =clearing_span
+= nested_form_for(@user,:url=>update_profile_path,:html => {:class => 'form-horizontal'}) do |f| 
+  %h2 Education
+  
   = f.fields_for :educations do |u|
     = render :partial => "educations_fields", :locals => {:builder => u }
-  = f.link_to_add "Add Education", :educations  
-  .fields
-    = f.submit
+  
+  = f.link_to_add "Add Education", :educations  ,:class=>"btn"  
+      
+  %hr   
+  %h2 Experience
+  = f.fields_for :experiences do |u|
+
+    = render :partial => "experiences_fields", :locals => {:builder => u }
+  = f.link_to_add "Add Experience", :experiences  ,:class=>"btn"
+
+  
   
   

@@ -4,11 +4,23 @@
     = stylesheet_link_tag    "application" 
     = javascript_include_tag "application" 
     = csrf_meta_tags
+    %script
+      var _gauges = _gauges || [];
+      (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', 'this is different for each gauge');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+      })(); 
     = yield :head
   %body
-    .container_16
+    .container_16.wrapper
       .topnav Make My Profile
-      .wrapper
+      .contentwrapper
         %header
           %nav#navbar
             %ul#nav
@@ -25,8 +37,8 @@
             = yield :sidebar
           #content{:class=>"#{main_content_css_class}"}
             = yield
-         
           .clear
-        .push
+      .clear   
+      .push
       %footer.footer
         %p Copyright (c) 2008

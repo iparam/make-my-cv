@@ -1,0 +1,200 @@
+@import "bootstrap"; 
+
+body{
+/*background-color:#143347;*/
+background-color:#6e6e6e;
+}
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper{
+
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+/*	background-color:white;*/
+	
+  background-color:#eff9f9;
+}
+.contentwrapper{
+/*	min-height: 96%;*/
+/*	height: auto !important;*/
+/*	height: 100%;*/
+/*	margin: 0 auto -100px;  the bottom margin is the negative value of the footer's height */
+/*	background-color:white;*/
+/*	box-shadow:-3px 0px 5px 1px #333,3px 0px 5px 1px #333;*/
+/*  background-color:#eff9f9;*/
+box-shadow:-3px 0px 5px 1px #333,3px 0px 5px 1px #333;
+}
+.wrapper{
+
+}
+#footer, .push {
+	height: 100px; /* .push must be the same height as .footer */
+}
+@font-face { font-family: Delicious; src: url('/assets/Delicious-Roman.otf'); } 
+
+@font-face { font-family: Delicious1; font-weight: bold; src: url('/assets/Delicious-Bold.otf'); }
+@font-face { font-family: "CaviarDreams"; src: url('/assets/CaviarDreams.ttf'); } 
+@font-face { font-family: "CaviarDreamsI"; src: url('/assets/CaviarDreamsItalic.ttf'); } 
+@font-face { font-family: "Angelina"; src: url('/assets/angelina.ttf'); } 
+@font-face { font-family: "notethis"; src: url('/assets/Note_this.ttf'); } 
+.topnav{
+padding:3px 20px;;
+background-color: #6e6e6e;
+height:70px;
+font-size:50px;
+font-family: "notethis";
+/*color:#133d00;*/
+}
+
+#navbar {
+	padding:15px 6px 4px 8px;
+	letter-spacing: .02em;
+	background: #236d97;
+    background: -moz-linear-gradient(top, #236d97 0%, #1e638a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#236d97), color-stop(100%,#1e638a));
+    background: -webkit-linear-gradient(top, #236d97 0%,#1e638a 100%);
+    background: -o-linear-gradient(top, #236d97 0%,#1e638a 100%);
+    background: -ms-linear-gradient(top, #236d97 0%,#1e638a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#236d97', endColorstr='#1e638a',GradientType=0 );
+    background: linear-gradient(top, #236d97 0%,#1e638a 100%);
+    border-top: 1px solid #2b81b3;
+    box-shadow: 0px 0px 5px #15476c;
+    -moz-box-shadow: 0px 0px 5px 0 #15476c;
+    -webkit-box-shadow: 0px 0px 5px #15476c;
+    border-bottom: 1px solid #15476c;
+	}
+
+#nav {
+	position:relative;
+	line-height:1.0;
+	height:40px;
+	font-size:.95em;
+	zoom:1;
+	z-index:99;
+	}
+
+#nav * {
+	list-style:none;
+	}
+
+#nav li {
+	float:left;
+	position:relative;
+	margin-right: 10px;
+	}
+	
+#nav li:hover {
+	visibility:inherit;/* fixes IE7 'sticky bug' */
+	}
+
+
+/*Default State, Top Nav*/
+#nav a, #nav a:visited {
+	padding:7px 16px 9px;
+	text-decoration:none;
+	color:#c0e9ff; 
+	display:block;
+	position:relative;
+	text-shadow: 0 1px 0 rgba(0,0,0,.2);
+	font-weight: bold;
+	font-size:.9em;
+	}
+
+#nav a, #nav li {
+	border-radius: 3px;
+	}
+
+#nav .children a, #nav .children li {
+	border-radius: 0;
+	}	
+
+/*Hover State, Top Nav*/
+
+
+
+#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active,
+#nav .current-cat .children a:hover,#nav .current-cat .children, 
+#nav li li {
+	background:#3a7eae;
+	outline:0;
+	color: #FFF;
+	}
+
+/*Active State, Top Nav*/
+#nav .current-cat a,#nav .current-cat a:visited,#nav .current_page_item a,
+#nav .current_page_item a:visited {
+	background-color:#1e3d51;
+	border-top:1px solid #112939;
+	border-bottom: 1px solid #26719f;
+	}
+
+#nav a.sf-with-ul, #nav a.sf-with-ul:visited {
+	padding-right:25px;
+	min-width:1px;/* trigger IE7 hasLayout so spans position accurately */
+	}
+#mainContent{
+margin-top:20px;
+}
+	
+	div#content form.data-form p, div#content form.data-form div { margin:0; padding: 10px 0 0 0;}
+
+div#content form.data-form input[type=text],
+div#content form.data-form textarea,
+div#content form.data-form input[type=password]
+{
+  padding: 3px;
+  font-size: 1.05em;
+  color: #444;
+}
+ form.data-form input[type=text],div#content form.data-form input[type=email],div#content form.data-form input[type=password],div#content form.data-form input[type=password]{  width: 50%;height:32px; }
+form.data-form textarea { width: 58%; height: 100px; }
+
+form.data-form input[type=submit] {
+  font-size: 1.2em;
+      /*padding: 10px;*/
+  /*border-top    : 1px solid #BBB;*/
+  /*border-left   : 1px solid #BBB;*/
+  /*border-right  : 1px solid #666;*/
+  /*border-bottom : 1px solid #666;*/
+  /*background-color: #DDD;*/
+   	background: #222 url('alert-overlay.png') repeat-x;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 23px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+    background-color:#007d9a;
+    
+    font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+form.data-form input[type=submit]:hover{
+    /*background-color: #0c7088;*/
+     /*background-color: #111; color: #fff; */
+}
+/*.fields{*/
+/*    margin: 0;*/
+/*    */
+/*}*/
+input[type='text']{
+ height:30px;
+ }
+.fields {
+  
+  label{
+   
+  }
+
+}

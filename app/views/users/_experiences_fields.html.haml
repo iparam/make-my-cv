@@ -1,0 +1,35 @@
+%hr
+%div.control-group
+  %label.control-label Company Name
+  %div.controls
+    = builder.text_field :company_name
+
+%div.control-group
+  %label.control-label Title
+  %div.controls
+    = builder.text_field :title
+
+%div.control-group
+  %label.control-label Location
+  %div.controls
+    = builder.text_field :location
+
+%div.control-group
+  %label.control-label Current Company
+  %div.controls
+    = builder.check_box :is_current
+    
+%div.control-group
+  %label.control-label Time Period
+  %div.controls
+    = builder.date_select :start_date 
+    to
+    =builder.date_select :end_date
+%div.control-group
+  %label.control-label Description
+  %div.controls
+    = builder.text_area :description,:style=>"width:600", :rows => 7
+
+%div.control-group
+  %div.controls    
+    = builder.link_to_remove "Remove Expierience",:class=>"btn"
