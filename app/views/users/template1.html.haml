@@ -1,0 +1,11 @@
+= content_for :head do
+  = stylesheet_link_tag "report",:media=>"all"
+= link_to "Generate Pdf",template1_path(:format=>"pdf"),:class=>'btn'
+%div.template1
+  = render :partial=>'pdf_header' 
+  %hr
+  = render :partial=>"pdf_summary"
+  %hr
+  = render :partial=>"pdf_experience"
+  %hr
+  = render :partial=>"pdf_projects"

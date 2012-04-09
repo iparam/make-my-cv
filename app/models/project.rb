@@ -1,20 +1,18 @@
-class Experience
+class Project
   include Mongoid::Document
+  field :name,:type => String
   field :company_name, :type => String
-  field :title, :type => String
-  field :location, :type => String
-  field :is_current, :type => Boolean
+  field :project_url, :type => String
+  field :is_ongoing, :type => Boolean
   field :start_date, :type => Date
   field :end_date, :type => Date
   field :description, :type => String
-  embedded_in :user   
-  validates_presence_of :title,:company_name    
-  validates_presence_of :start_date
-  validates_presence_of :end_date,:if => Proc.new { |exp| exp.is_current == false }
+  embedded_in :user    
+  validates_presence_of :name
+  validates_presence_of :end_date,:if => Proc.new { |exp| exp.is_ongoing == false }
   validate :validate_end_date_before_start_date
 
   def validate_end_date_before_start_date
-
     if end_date && start_date && end_date < start_date
       errors.add(:end_date, "End Date should be greater than Start Date") 
     end

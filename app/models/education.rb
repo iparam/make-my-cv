@@ -6,7 +6,6 @@ class Education
   field :start_date, :type => String
   field :end_date, :type => String
   field :grade, :type => String
-  field :user_id
   embedded_in :user
-  
+  validates_presence_of :name,:degree,:start_date,:end_date
 end

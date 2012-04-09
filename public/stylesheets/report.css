@@ -1,0 +1,62 @@
+.template1 .name{
+  margin:0px;
+}
+.template1 .headline{
+  font-size:18px;
+  margin-top:4px;
+}
+
+.template1 .email{
+ font-size:18px;
+ margin-top:7px;
+ color:gray;
+}
+.template1 .title_text{
+ font-size:20px;
+ color:gray;
+ margin:10px 0;
+}
+.template1 .title_text{
+ font-size:22px;
+ color:gray;
+ margin:10px 0;
+}
+.template1 .summary_text {
+margin:10px 0 0 0;
+}
+.template1 .summary_text,.template1 .summary_text p{
+  font-size:15px;
+  color:#111;
+}
+.template1 .exp_title{
+  font-size:20px;
+  color:#111;
+ margin:10px 5px;
+}
+.template1 .exp_company{
+font-size:17px;
+color:#111;
+ margin:10px 5px;
+}
+.template1 .exp_date{
+font-size:16px;
+color:gray;
+ margin:5px;
+}
+.template1 .project_title
+{
+   font-size:20px;
+   color:black;
+   margin:10px 5px;
+ }
+ .template1 .project_duration
+ {
+  font-size:15px;
+  color:gray;
+  margin:5px;
+ }
+ .template1 .project_description{
+    margin:5px;
+   font-size:17px;
+   color:#111;
+ }

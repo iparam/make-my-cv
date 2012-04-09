@@ -26,11 +26,13 @@ gem "haml-rails"
 gem "haml"
 gem "pry"
 gem "acts_as_flying_saucer"
-
+gem "redcarpet"
 gem 'formtastic'
 gem "nested_form", :git => 'https://github.com/ryanb/nested_form.git'
 
 
+gem 'mongrel', '>= 1.2.0.pre2'
+gem "unicorn"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

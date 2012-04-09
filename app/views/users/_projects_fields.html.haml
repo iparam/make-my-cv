@@ -1,23 +1,20 @@
 %hr
 %div.control-group
-  %label.control-label Company Name*
+  %label.control-label Name*
+  %div.controls
+    = builder.text_field :name
+
+%div.control-group
+  %label.control-label Company/Client
   %div.controls
     = builder.text_field :company_name
 
-%div.control-group
-  %label.control-label Title*
-  %div.controls
-    = builder.text_field :title
+
 
 %div.control-group
-  %label.control-label Location
+  %label.control-label On going
   %div.controls
-    = builder.text_field :location
-
-%div.control-group
-  %label.control-label Current Company
-  %div.controls
-    = builder.check_box :is_current
+    = builder.check_box :is_ongoing
     
 %div.control-group
   %label.control-label Time Period*
@@ -32,4 +29,4 @@
 
 %div.control-group
   %div.controls    
-    = builder.link_to_remove "Remove Expierience",:class=>"btn"
+    = builder.link_to_remove "Remove Project",:class=>"btn"

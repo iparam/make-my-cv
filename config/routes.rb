@@ -1,6 +1,7 @@
 MakeMyCv::Application.routes.draw do
 
   match 'profile' => 'users#profile', :as => :profile,:method=>:get
+  match 'template1' => 'users#template1', :as => :template1,:method=>:get
   match 'update_profile' => 'users#update_profile', :as => :update_profile,:method=>:put
   devise_for :users
 

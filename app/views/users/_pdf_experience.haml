@@ -1,0 +1,10 @@
+.title_text  
+  Experience
+.experience_text
+  - @user_experiences.each do |exp|
+    .exp_title
+      = exp_title(exp)
+    
+    .exp_date     
+      = exp_date(exp)   
+      = calculate_exp_time(exp.start_date,exp.end_date) 

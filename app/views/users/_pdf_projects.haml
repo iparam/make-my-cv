@@ -1,0 +1,13 @@
+.title_text  
+  Projects
+.project_text
+  - @projects.each do |project|
+    .project_title
+      = project.name 
+      = (project.url) if project.project_url.present?
+    .project_duration
+      =project_duration(project)    
+    .project_description
+      =markdown(project.description)
+  
+  

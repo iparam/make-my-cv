@@ -44,7 +44,15 @@ class User
 
   embeds_many :educations
   embeds_many :experiences
+  embeds_many :projects
+  embeds_one :user_info
 
-   accepts_nested_attributes_for :educations,:allow_destroy=>true
-   accepts_nested_attributes_for :experiences,:allow_destroy=>true
+  accepts_nested_attributes_for :educations,:allow_destroy=>true
+  accepts_nested_attributes_for :experiences,:allow_destroy=>true
+  accepts_nested_attributes_for :user_info,:allow_destroy=>true
+  accepts_nested_attributes_for :projects,:allow_destroy=>true  
+  
+  def full_name
+    self.user_info.first_name+ "  "+self.user_info.last_name
+  end
 end

@@ -11,7 +11,7 @@
  *= require base
  *= require fluid_grid
  *= require formtastic
-
+ *= require smoothness/jquery-ui-1.8.18.custom
   
   # app/assets/stylesheets/ie6.css
   *= require formtastic_ie6

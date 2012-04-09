@@ -1,8 +1,13 @@
 %hr
 %div.control-group
-  %label.control-label School Name
+  %label.control-label School Name*
   %div.controls
     = builder.text_field :name
+
+%div.control-group
+  %label.control-label Degree*
+  %div.controls
+    = builder.text_field :degree
    
 %div.control-group
   %label.control-label Field Of Study
@@ -10,7 +15,7 @@
     = builder.text_field :field_of_study
 
 %div.control-group
-  %label.control-label Date Attended
+  %label.control-label Date Attended*
   %div.controls  
     = builder.select :start_date,options_for_select(options_for_education_year,builder.object.start_date.try(:to_i)),{:prompt=>"-YY-"}
     To

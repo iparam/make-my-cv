@@ -47,4 +47,8 @@ def flash_messages
 	def current_class(class_name)
 	 active_class==class_name ? "current-cat" : ""
 	end
+  def markdown(content)
+    markdown =Redcarpet::Markdown.new(Redcarpet::Render::XHTML,:hard_wrap=>true,:filter_html=>true,:autolink=>true,:no_intra_emphasis=>true)
+    markdown.render(content).html_safe
+  end
 end

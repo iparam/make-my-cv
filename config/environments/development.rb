@@ -24,15 +24,16 @@ MakeMyCv::Application.configure do
 
 
   # Do not compress assets
+  
   config.assets.compress = false
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  silence_warnings do
-            begin
-                require 'pry'
-                IRB = Pry
-            rescue LoadError
-            end
-        end
+#  silence_warnings do
+#    begin
+#      require 'pry'
+#      IRB = Pry
+#    rescue LoadError
+#    end
+#  end
 end

@@ -1,0 +1,29 @@
+%div.control-group
+  %label.control-label First Name
+  %div.controls
+    = builder.text_field :first_name
+   
+%div.control-group
+  %label.control-label Last Name
+  %div.controls
+    = builder.text_field :last_name
+    
+%div.control-group
+  %label.control-label Display Name
+  %div.controls
+    = builder.text_field :display_name
+        
+%div.control-group
+  %label.control-label Professional "Headline"
+  %div.controls
+    = builder.text_field :headline        
+    
+%div.control-group
+  %label.control-label Professional Experience & Goals
+  %div.controls
+    = builder.text_area :goal,:style=>"width:500", :rows => 8    
+    
+%div.control-group
+  %label.control-label Specialities
+  %div.controls
+    = builder.text_area :specialities,:style=>"width:500", :rows => 5

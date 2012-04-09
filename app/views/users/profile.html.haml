@@ -1,5 +1,18 @@
- 
+
 = nested_form_for(@user,:url=>update_profile_path,:html => {:class => 'form-horizontal'}) do |f| 
+  -if @user.errors.present?
+    .alert
+      %a.close{:href=>"#","data-dismiss"=>"alert"}x
+      %ol
+        = profile_error_messages(@user)
+      
+      
+  %h2 Basic Information
+  %hr
+  = f.fields_for :user_info do |u|
+    = render :partial => "user_info_field", :locals => {:builder => u } 
+  %hr
+    
   %h2 Education
   
   = f.fields_for :educations do |u|
@@ -10,10 +23,15 @@
   %hr   
   %h2 Experience
   = f.fields_for :experiences do |u|
-
     = render :partial => "experiences_fields", :locals => {:builder => u }
   = f.link_to_add "Add Experience", :experiences  ,:class=>"btn"
-
   
+  %h2 Projects
+  = f.fields_for :projects do |u|
+    = render :partial => "projects_fields", :locals => {:builder => u }
+  = f.link_to_add "Add Project", :projects  ,:class=>"btn" 
+
+  %div.form-actions
+    =f.submit "Save",:class=>"btn btn-primary"
   
   
