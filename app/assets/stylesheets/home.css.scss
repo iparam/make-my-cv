@@ -1,15 +1,50 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+#make_my_profile_info p {
+font-size:26px;
+margin:20px 0 30px 0;
+font-family: "notethis";
+}
+#make_my_profile_info p span {
+font-size:30px;
+font-family: "notethis"
+}
+#make_my_profile_info ol
+{
+ font-size:14px;
+ list-style:none;
+}
+#make_my_profile_info ol li{
+margin:10px 0;
+font-size:14px;
+border-radius:23px 10px 10px 3px;
+-moz-border-radius: 15px 10px 10px 3px;
+	-webkit-border-radius: 23px 10px 10px 3px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	display:block;
+	width:270px;
+	padding:10px;
+	text-align:left;
+	padding-left:20px;
+}
+.fields{
+margin:14px 0 3px 0;
+}
 .login_form{
   background-color: #fff;
   margin: 10px;
   padding:5px 0 10px 25px;
+  border-radius:10px;
+  -moz-border-radius: 10px;
   -webkit-border-radius:10px;
   -webkit-box-shadow:0 1px 15px rgba(0,0,0,1);
-  /*-moz-box-shadow:0 1px 15px rgba(0,0,0,2);*/
-   font-family:"Delicious";
+  box-shadow: 0px 1px 15px rgba(0,0,0,1);
+  -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.5);
+  font-family:"Delicious";
 }
 .login_form .sign_up_text{
   font-size:22px;
@@ -34,10 +69,12 @@
 	padding: 10px 20px;
 	color: #fff;
 	text-decoration: none;
-	-moz-border-radius: 15px;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
 	-webkit-border-radius: 23px;
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	border: 1px solid rgba(0,0,0,0.25);
 	position: relative;

@@ -2,12 +2,10 @@
   = devise_error_messages!
   .fields 
     = f.label :email 
-    %br
     = f.email_field :email 
 
   .fields 
     = f.label :password 
-    %br
     = f.password_field :password 
   - if devise_mapping.rememberable? 
     = f.check_box :remember_me 
