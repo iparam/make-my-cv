@@ -8,6 +8,10 @@ test:
 
 # set these environment variables on your prod server
 
+#production:
+#  host: localhost
+#  database: make_my_cv_development
+
 production:
   host: <%= ENV['MONGOID_HOST'] %>
   port: <%= ENV['MONGOID_PORT'] %>
