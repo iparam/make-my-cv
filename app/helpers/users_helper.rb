@@ -60,5 +60,9 @@ module UsersHelper
     "#{start_date}  to  #{end_date} #{company_name}"
     
   end
-  
+  def education_info(education)
+    info = "#{education.degree}, "
+    info << "#{education.field_of_study}, " if education.field_of_study.present?
+    info << "#{education.start_date} - #{education.end_date}"
+ end   
 end

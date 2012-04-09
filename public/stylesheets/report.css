@@ -25,7 +25,7 @@
 margin:10px 0 0 0;
 }
 .template1 .summary_text,.template1 .summary_text p{
-  font-size:15px;
+  font-size:16px;
   color:#111;
 }
 .template1 .exp_title{
@@ -57,6 +57,26 @@ color:gray;
  }
  .template1 .project_description{
     margin:5px;
-   font-size:17px;
+   font-size:20px;
    color:#111;
  }
+ .template1 .project_description p{
+  font-size:15px;
+   color:#111;
+ }
+.template1 .education_text{
+ font-size:20px;
+   color:black;
+   margin:10px 5px;
+}
+.template1 .edu_title{
+  font-size:20px;
+  color:#111;
+ margin:10px 5px;
+}
+.template1 .edu_date{
+font-size:16px;
+/*color:gray;*/
+color:#111;
+ margin:5px;
+}

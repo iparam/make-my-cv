@@ -24,7 +24,7 @@
                 %li{:class=>"#{current_class('home')}"}
                   %a{:href => "#"} Home
               %li
-                %a{:href => "#"} About Us
+                %a{:href => "/about"} About Us
               - if current_user  
                 %li{:class=>"#{current_class('template1')}"}
                   = link_to "Logout",logout_path  

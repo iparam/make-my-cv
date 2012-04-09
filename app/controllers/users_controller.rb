@@ -16,9 +16,10 @@ class UsersController < ApplicationController
     @user = current_user
     @user_experiences= @user.experiences.order_by([:start_date,:desc])
     @projects= @user.projects.order_by([[:start_date,:desc],[:end_date,:desc]])
+    @educations= @user.educations.order_by([[:start_date,:desc],[:end_date,:desc]])
     respond_to do |format|
       format.html
-      format.pdf {render_pdf :template => 'users/template1',:send_file=>{:file_name=>"ss.pdf"}}
+      format.pdf {render_pdf :template => 'users/template1',:send_file=>{:filename=>"#{@user.full_name}.pdf"}}
     end
   end
 end
