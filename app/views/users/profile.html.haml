@@ -1,3 +1,12 @@
+%ul.nav.nav-tabs
+  %li.active
+    %a{:href=>"#user_info_nav","data-toggle"=>"tab"} Basic Info
+  %li
+    %a{:href=>"#education_nav","data-toggle"=>"tab"} Education
+  %li
+    %a{:href=>"#exp_nav","data-toggle"=>"tab"} Experience  
+  %li
+    %a{:href=>"#project_nav","data-toggle"=>"tab"} Projects  
 
 = nested_form_for(@user,:url=>update_profile_path,:html => {:class => 'form-horizontal'}) do |f| 
   -if @user.errors.present?
@@ -6,32 +15,39 @@
       %ol
         = profile_error_messages(@user)
       
-      
-  %h2 Basic Information
-  %hr
-  = f.fields_for :user_info do |u|
-    = render :partial => "user_info_field", :locals => {:builder => u } 
-  %hr
-    
-  %h2 Education
-  
-  = f.fields_for :educations do |u|
-    = render :partial => "educations_fields", :locals => {:builder => u }
-  
-  = f.link_to_add "Add Education", :educations  ,:class=>"btn"  
-      
-  %hr   
-  %h2 Experience
-  = f.fields_for :experiences do |u|
-    = render :partial => "experiences_fields", :locals => {:builder => u }
-  = f.link_to_add "Add Experience", :experiences  ,:class=>"btn"
-  
-  %h2 Projects
-  = f.fields_for :projects do |u|
-    = render :partial => "projects_fields", :locals => {:builder => u }
-  = f.link_to_add "Add Project", :projects  ,:class=>"btn" 
+  .tab-content
+    %div.tab-pane.active#user_info_nav      
+      %h2 Basic Information
+      %hr
+      = f.fields_for :user_info do |u|
+        = render :partial => "user_info_field", :locals => {:builder => u }
+      %div.form-actions
+        =f.submit "Save",:class=>"btn btn-primary" 
+      %hr
+    %div.tab-pane#education_nav      
+      %h2 Education
+      = f.fields_for :educations do |u|
+        = render :partial => "educations_fields", :locals => {:builder => u }
+      = f.link_to_add "Add Education", :educations  ,:class=>"btn"
+      %div.form-actions
+        =f.submit "Save",:class=>"btn btn-primary"   
+      %hr
+    %div.tab-pane#exp_nav
+      %h2 Experience
+      = f.fields_for :experiences do |u|
+        = render :partial => "experiences_fields", :locals => {:builder => u }
+      = f.link_to_add "Add Experience", :experiences  ,:class=>"btn"
+      %div.form-actions
+        =f.submit "Save",:class=>"btn btn-primary" 
+        
+    %div.tab-pane#project_nav
+      %h2 Projects
+      = f.fields_for :projects do |u|
+        = render :partial => "projects_fields", :locals => {:builder => u }
+      = f.link_to_add "Add Project", :projects  ,:class=>"btn"
+      %div.form-actions
+        =f.submit "Save",:class=>"btn btn-primary"  
 
-  %div.form-actions
-    =f.submit "Save",:class=>"btn btn-primary"
+
   
   

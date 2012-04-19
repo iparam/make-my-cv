@@ -8,3 +8,9 @@ $ ->
     $(this).datepicker({dateFormat: 'yy-mm-dd'})
   
   $(".alert").alert();  
+  
+  $('#myTab').tab('show')
+  
+  $('a[data-toggle="tab"]').on 'shown', (e) ->
+    e.target 
+    e.relatedTarget 
