@@ -1,11 +1,12 @@
-.title_text  
-  Summary
-.summary_text
-  =markdown(@user.user_info.goal)
+-if @user.user_info
+  .title_text  
+    Summary
+  .summary_text
+    =markdown(@user.user_info.goal)
 
-.title_text{:style=>"margin:20px 0; "}  
-  Specialties
-.summary_text
-  =markdown(@user.user_info.specialities)
+  .title_text{:style=>"margin:20px 0; "}  
+    Specialties
+  .summary_text
+    =markdown(@user.user_info.specialities)
   
   

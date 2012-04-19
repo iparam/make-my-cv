@@ -1,8 +1,9 @@
-.title_text  
-  Education
-.education_text
-  - @educations.each do |education|
-    .edu_title
-      = education.name
-    .edu_date  
-      = education_info(education)
+- if @educations.present?
+  .title_text  
+    Education
+  .education_text
+    - @educations.each do |education|
+      .edu_title
+        = education.name
+      .edu_date  
+        = education_info(education)

@@ -53,6 +53,6 @@ class User
   accepts_nested_attributes_for :projects,:allow_destroy=>true  
   
   def full_name
-    self.user_info.first_name+ "  "+self.user_info.last_name
+    self.user_info.first_name+ "  "+self.user_info.last_name if user_info
   end
 end
