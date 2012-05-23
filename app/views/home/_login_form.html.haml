@@ -1,8 +1,8 @@
 = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| 
   = devise_error_messages!
   .fields 
-    = f.label :email 
-    = f.email_field :email 
+    = f.label :username 
+    = f.email_field :username 
 
   .fields 
     = f.label :password 

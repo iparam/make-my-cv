@@ -22,4 +22,13 @@ class UsersController < ApplicationController
       format.pdf {render_pdf :template => 'users/template1',:send_file=>{:filename=>"#{@user.full_name}.pdf"}}
     end
   end
+  def fetch_linkedin_data
+    if current_user.linkedin_id.present?
+
+    current_user.fill_linkedin_data
+    redirect_to profile_path
+    else
+      redirect_to user_omniauth_authorize_path(:linkedin)
+   end 
+  end
 end

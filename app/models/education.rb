@@ -1,6 +1,7 @@
 class Education
   include Mongoid::Document
   field :name, :type => String
+  field :school_name, :type => String
   field :degree, :type => String
   field :field_of_study, :type => String
   field :start_date, :type => String

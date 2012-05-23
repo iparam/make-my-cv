@@ -3,13 +3,15 @@ MakeMyCv::Application.routes.draw do
   match 'profile' => 'users#profile', :as => :profile,:method=>:get
   match 'template1' => 'users#template1', :as => :template1,:method=>:get
   match 'update_profile' => 'users#update_profile', :as => :update_profile,:method=>:put
+  match 'fetch_linkedin_data' => 'users#fetch_linkedin_data', :as => :fetch_linkedin_data
   match 'about' => 'home#about', :as => :about
-  devise_for :users
+#  devise_for :users
 
-
+devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks"} 
   devise_scope :user do
     get '/login' => 'devise/sessions#new'
     get '/logout' => 'devise/sessions#destroy'
+    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
   end
   root :to => "home#index"
 

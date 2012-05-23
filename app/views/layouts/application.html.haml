@@ -32,11 +32,14 @@
               - else
                 %li{:class=>"#{current_class('home')}"}
                   %a{:href => "#"} Home
-              %li
-                %a{:href => "/about"} About Us
+                %li
+                  %a{:href => "/about"} About Us
+                = link_to image_tag('linkedin_64.png'),user_omniauth_authorize_path(:linkedin),:style=>"margin:0;padding-top: 5px;float:right"          
+      
               - if current_user  
                 %li{:class=>"#{current_class('template1')}"}
-                  = link_to "Logout",logout_path  
+                  = link_to "Logout",logout_path 
+
         %section#mainContent.grid_16.alpha.omega
           #sidebar.alpha{:class=>"#{sidebar_css_class}"}
             = yield :sidebar

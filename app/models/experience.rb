@@ -1,12 +1,17 @@
 class Experience
   include Mongoid::Document
   field :company_name, :type => String
+  # field :name, :type => String
   field :title, :type => String
   field :location, :type => String
   field :is_current, :type => Boolean
   field :start_date, :type => Date
+  field :l_start_date, :type => String
   field :end_date, :type => Date
   field :description, :type => String
+  field :industry, :type => String
+  field :size, :type => String
+  field :company_type, :type => String
   embedded_in :user   
   validates_presence_of :title,:company_name    
   validates_presence_of :start_date

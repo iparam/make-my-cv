@@ -22,7 +22,7 @@ end
 gem "mongoid" #,:git=>'https://github.com/mongoid/mongoid.git'
 gem "bson_ext"
 gem 'jquery-rails'
-gem "devise"
+gem "devise",'>=2.1.0'
 gem "haml-rails"
 gem "haml"
 
@@ -30,7 +30,9 @@ gem "acts_as_flying_saucer"
 gem "redcarpet"
 gem 'formtastic'
 gem "nested_form", :git => 'https://github.com/ryanb/nested_form.git'
-
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'linkedin',">=0.3.6"
 
 
 # To use ActiveModel has_secure_password
