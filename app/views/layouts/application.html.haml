@@ -27,7 +27,9 @@
                 %li{:class=>"#{current_class('profile')}"}
                   = link_to "Profile",profile_path
                 %li{:class=>"#{current_class('template1')}"}
-                  = link_to "Template",template1_path  
+                  = link_to "Template",template1_path 
+                %li
+                  %a{:href => "/about"} About Us   
                 
               - else
                 %li{:class=>"#{current_class('home')}"}
